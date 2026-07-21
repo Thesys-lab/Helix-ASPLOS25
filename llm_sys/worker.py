@@ -49,7 +49,7 @@ def run_and_submit(engine, start_idx, end_idx, is_last_layer, hidden_size, force
         output_info_list, output_tensor, parsed_prompt = output
         output_tensor = output_tensor.cpu()
 
-        # build finished reqeust information
+        # build finished request information
         finished_ids, finished_offsets, finished_lengths = [], [], []
         # non-last, send out activations
         for output_info in output_info_list:
